@@ -21,7 +21,7 @@ void loop(){
   //"Manipulação" de registros para simulação
   temperaturaLM35 = ((float(analogRead(LM35))*5/(1023))/0.01) - 6;
   temperatura = temperatura - 5;
-  umidade = umidade - 35;
+  umidade = umidade + 8;
 
   //
   if(isnan(temperatura) or isnan(umidade)){
